@@ -151,7 +151,7 @@ def main():
 
 		try:
 
-			response = session_requests.get("https://apptopia.com/apps/google_play/"+str(i).replace(".","")+"/performance.csv", stream=True)
+			response = session_requests.get("https://apptopia.com/apps/google_play/"+str(i)+"/performance.csv", stream=True)
 			shutil.copyfileobj(response.raw, g)
 			del response
 
